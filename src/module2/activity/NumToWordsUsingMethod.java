@@ -39,7 +39,7 @@ public class NumToWordsUsingMethod {
                 System.out.println("Ten");
                 break;
             default:
-                System.out.println("Value of x is null");
+                System.out.println("Value of x is out of scope");
         }
     }
 }
