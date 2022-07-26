@@ -2,7 +2,7 @@ package module2.activity;
 
 public class numtowords {
 
-    public static void Main(String [] args) {
+    public static void Main(String args[]) {
                 int x = 5;
                 switch(x){
                     case 1:
