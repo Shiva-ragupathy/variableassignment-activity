@@ -1,5 +1,7 @@
 package Module10;
 
+import java.util.List;
+
 public class Employee extends Person {
 
     private String company;
@@ -14,7 +16,7 @@ public class Employee extends Person {
 
     public Employee() {
         this.company = "Access health care";
-        this.salary = 699;
+        this.salary = 800;
         this.title = "developer";
         System.out.println("I am from company" + company + " and my salary is" + salary);
     }
@@ -51,9 +53,25 @@ public class Employee extends Person {
     @Override
     public void personIntroduce() {
         System.out.println("My name is " + getName() + " and I am " + getAge() + " years old");
-        System.out.println("I am working as "+ getTitle() + " in " + getCompany() + " and my salary is " + getSalary());
+        System.out.println("I am working as " + getTitle() + " in " + getCompany() + " and my salary is " + getSalary());
     }
+
+public double getHighestPaidEmp(List<Employee> empList) {
+    double largest = 0;
+    for (int i = 0; i <empList.size();i++) {
+        if(empList.get(i).getSalary() > largest) {
+            largest = empList.get(i).getSalary();
+        }
+
+    }
+   return largest;
+    }
+
+
 }
+
+
+
 
 
 
